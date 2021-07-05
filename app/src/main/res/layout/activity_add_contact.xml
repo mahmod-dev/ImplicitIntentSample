@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_100"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgContact"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@color/white" />
+
+            <ImageView
+                android:id="@+id/imgCam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_camera" />
+        </FrameLayout>
+
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_edit_text"
+            android:drawableStart="@drawable/ic_profile_disable"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/fist_name"
+            android:padding="16dp"
+            android:textColorHint="@color/black"
+            android:textDirection="locale"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_edit_text"
+            android:drawableStart="@drawable/ic_profile_disable"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/last_name"
+            android:padding="16dp"
+            android:textColorHint="@color/black"
+            android:textDirection="locale"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_edit_text"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColorHint="@color/black"
+            android:textDirection="locale"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_edit_text"
+            android:drawableStart="@drawable/ic_smartphone"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/phone"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColorHint="@color/black"
+            android:textDirection="locale"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_edit_text"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/address"
+            android:padding="16dp"
+            android:textColorHint="@color/black"
+            android:textDirection="locale"
+            android:textSize="16sp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sh_gradiant"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/montserrat_regular"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/add"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_100"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_sms_body"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="@string/phone_number"
+        android:padding="16dp"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textDirection="locale"
+        android:textSize="16sp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/sh_gradiant"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/montserrat_regular"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/call"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
+
