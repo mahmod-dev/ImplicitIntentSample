@@ -1,6 +1,5 @@
 package com.mahmouddev.implicitintentsample
 
-import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,32 +13,32 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.tvCall.setOnClickListener {
-            navigateToToActivity(CallActivity::class.java)
+            navigateToActivity(CallActivity::class.java)
         }
 
         binding.tvContact.setOnClickListener {
-            navigateToToActivity(AddContactActivity::class.java)
+            navigateToActivity(AddContactActivity::class.java)
         }
 
         binding.tvSendSms.setOnClickListener {
-            navigateToToActivity(AddSmsActivity::class.java)
+            navigateToActivity(AddSmsActivity::class.java)
         }
 
         binding.tvSite.setOnClickListener {
-            navigateToToActivity(BrowsingActivity::class.java)
+            navigateToActivity(BrowsingActivity::class.java)
         }
 
         binding.tvLocation.setOnClickListener {
-            navigateToToActivity(GeoActivity::class.java)
+            navigateToActivity(GeoActivity::class.java)
         }
 
         binding.tvLaunchApp.setOnClickListener {
-            navigateToToActivity(LaunchAppActivity::class.java)
+            navigateToActivity(LaunchAppActivity::class.java)
         }
 
     }
 
-    private fun navigateToToActivity(destActivity: Class<*>) {
+    private fun navigateToActivity(destActivity: Class<*>) {
         startActivity(Intent(this, destActivity))
 
     }
